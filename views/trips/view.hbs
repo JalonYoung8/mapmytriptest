@@ -1,0 +1,14 @@
+<h1>{{trip.trip_name}}</h1>
+<h2>{{trip.trip_year}}</h2>
+<a href="/photos/new?trip_id={{trip_id}}">Add New Photo</a><br />
+
+
+{{trip.description}}
+
+<ul>
+
+{{#each photos}}
+    <li>{{photoURL}}</li>
+{{/each}}
+
+</ul>
